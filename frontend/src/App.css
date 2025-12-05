@@ -1,0 +1,363 @@
+.auth-page {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #1f2937 0, #020617 45%, #000 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.auth-overlay {
+  width: 100%;
+  max-width: 420px;
+}
+
+.auth-card {
+  background: rgba(15, 23, 42, 0.9);
+  border-radius: 1.5rem;
+  padding: 2.25rem 2rem;
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.75);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  backdrop-filter: blur(18px);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1.75rem;
+}
+
+.logo-dot {
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #38bdf8, #6366f1, #a855f7);
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+}
+
+.brand-name {
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #9ca3af;
+}
+
+.auth-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #e5e7eb;
+  margin-bottom: 0.25rem;
+}
+
+.auth-subtitle {
+  font-size: 0.9rem;
+  color: #9ca3af;
+  margin-bottom: 1.6rem;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.field-label {
+  font-size: 0.85rem;
+  color: #9ca3af;
+}
+
+.field-input,
+.field-select {
+  background: rgba(15, 23, 42, 0.85);
+  border-radius: 0.75rem;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  padding: 0.7rem 0.85rem;
+  font-size: 0.9rem;
+  color: #e5e7eb;
+  outline: none;
+  transition: border 0.15s ease, box-shadow 0.15s ease, transform 0.05s ease;
+}
+
+.field-input:focus,
+.field-select:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.4);
+  transform: translateY(-0.5px);
+}
+
+.field-input::placeholder {
+  color: #6b7280;
+}
+
+.auth-button {
+  width: 100%;
+  border-radius: 999px;
+  padding: 0.75rem 1rem;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  background: linear-gradient(135deg, #38bdf8, #6366f1);
+  color: #f9fafb;
+  margin-top: 0.4rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  transition: transform 0.08s ease, box-shadow 0.08s ease, filter 0.15s ease;
+  box-shadow: 0 15px 35px rgba(79, 70, 229, 0.4);
+}
+
+.auth-button:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.05);
+}
+
+.auth-button:active {
+  transform: translateY(0);
+  box-shadow: 0 10px 25px rgba(79, 70, 229, 0.5);
+}
+
+.secondary-text {
+  font-size: 0.85rem;
+  color: #9ca3af;
+  text-align: center;
+}
+
+.secondary-link {
+  color: #38bdf8;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.secondary-link:hover {
+  text-decoration: underline;
+}
+
+.error-box {
+  background: rgba(239, 68, 68, 0.08);
+  border-radius: 0.75rem;
+  border: 1px solid rgba(248, 113, 113, 0.6);
+  padding: 0.6rem 0.75rem;
+  margin-bottom: 0.7rem;
+  font-size: 0.8rem;
+  color: #fecaca;
+}
+
+.success-box {
+  background: rgba(22, 163, 74, 0.08);
+  border-radius: 0.75rem;
+  border: 1px solid rgba(74, 222, 128, 0.6);
+  padding: 0.6rem 0.75rem;
+  margin-bottom: 0.7rem;
+  font-size: 0.8rem;
+  color: #bbf7d0;
+}
+
+.footer-text {
+  margin-top: 0.9rem;
+  font-size: 0.75rem;
+  text-align: center;
+  color: #6b7280;
+}
+
+.dashboard-container {
+  padding: 2.5rem;
+  color: #e5e7eb;
+}
+
+.dash-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.logout-btn {
+  background: #ef4444;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+.item-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  max-width: 400px;
+  margin-bottom: 2rem;
+}
+
+.item-form input,
+.item-form textarea {
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 0.5rem;
+  padding: 0.9rem;
+  color: white;
+}
+
+.item-form button {
+  background: linear-gradient(135deg, #34d399, #10b981);
+  border: none;
+  padding: 0.7rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 500;
+}
+
+.items-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+
+.item-card {
+  background: #1e293b;
+  border-radius: 1rem;
+  padding: 1.2rem;
+  width: 300px;
+  border: 1px solid #334155;
+}
+
+.edit-btn {
+  background: #3b82f6;
+  border: none;
+  padding: 0.5rem 0.8rem;
+  margin-right: 0.6rem;
+  border-radius: 0.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background: #ef4444;
+  border: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.items-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  gap: 1.3rem;
+}
+
+.item-card {
+  background: #1e293b;
+  border-radius: 1rem;
+  padding: 1.2rem;
+  border: 1px solid #334155;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 240px; /* equal cards */
+  overflow: hidden;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  overflow: hidden;
+}
+
+.description-box {
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+  color: #cbd5e1;
+  overflow-y: auto;
+  max-height: 100px; 
+  padding-right: 6px;
+}
+
+.description-box::-webkit-scrollbar {
+  width: 4px;
+}
+.description-box::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 10px;
+}
+
+.created-by {
+  margin-top: 0.3rem;
+  font-size: 0.8rem;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.admin-tag {
+  color: #f43f5e;
+  font-weight: 600;
+}
+
+.action-row {
+  margin-top: auto;
+  display: flex;
+  gap: 0.6rem;
+  justify-content: flex-start;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 0.45rem 0.8rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.edit-btn {
+  background: #3b82f6;
+  color: white;
+}
+
+.delete-btn {
+  background: #ef4444;
+  color: white;
+}
+
+.item-card * {
+  word-break: break-word;
+}
+
+
+
+.error-text {
+  font-size: 0.75rem;
+  color: #f87171;
+  margin-top: 3px;
+}
+
+.input-error {
+  border-color: #f87171 !important;
+  box-shadow: 0 0 0 1px rgba(248, 113, 113, 0.5);
+}
